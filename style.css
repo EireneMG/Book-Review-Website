@@ -1,0 +1,301 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+
+/* Color Palette
+#0378A6
+#F2CB05
+#F29F05
+#F25C05
+#733119
+*/
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  background-color: white !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #733119 !important;
+  font-size: 1.5rem;
+}
+
+.navbar-brand i {
+  color: #733119;
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  color: #000 !important;
+  margin: 0 0.8rem;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #F25C05 !important;
+}
+
+/* Search container styles */
+.search-container {
+  position: relative;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0;
+  padding-left: 8px;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  width: 200px;
+  outline: none;
+}
+
+.search-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #F25C05;
+  transition: width 0.3s ease;
+}
+
+/* Show underline on hover and focus */
+.search-wrapper:hover .search-underline,
+.search-input:focus ~ .search-underline {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-image {
+  background-image: url('Assets/Hero Background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #000; /* Black text */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #555; /* Subtle gray text */
+  text-transform: uppercase;
+}
+
+.content-wrapper {
+  max-width: 1200px; /* Adjust this to match your posters container width */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-content {
+  width: 100%;
+}
+
+/* Poster Section */
+.poster-main-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  border-bottom: 3px solid #000;
+  width: fit-content;
+  margin: 4rem auto 3rem;
+  padding-bottom: 0.3rem;
+}
+
+.posters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.poster {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 200px;
+  overflow: visible;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 4px;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+  outline: 2px solid #00ff00; /* Green outline */
+  outline-offset: 2px;
+}
+
+.poster-title {
+  position: absolute;
+  top: -2.5rem; /* Position above the poster */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(52, 58, 64, 0.9); /* Dark gray background */
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.poster:hover .poster-title {
+  opacity: 1;
+}
+
+.poster-stats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.poster:hover .poster-stats {
+  opacity: 1;
+}
+
+.views, .likes {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.views i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.likes i {
+  color: #ff9f1c; /* Orange heart color */
+  font-size: 1.2rem;
+}
+
+.views span, .likes span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/*Popular Section */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #456;
+  padding-bottom: 0.3rem;
+  width: 1060px; 
+  margin: 0 auto; /* Center align the header */
+  margin-top: 5rem;
+}
+
+
+.popular-title {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #456;
+}
+
+.more-link {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.popular-section .poster:hover {
+  outline: none;
+}
+
+.popular-section .poster-actions {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.popular-section .poster:hover .poster-actions {
+  opacity: 1;
+}
+
+.action-btn {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.action-btn i {
+  color: white;
+  font-size: 14px;
+}
+
+/* Review Section */
