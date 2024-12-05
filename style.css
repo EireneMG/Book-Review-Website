@@ -354,3 +354,83 @@ body {
 .text-danger {
   color: #dc3545 !important;
 }
+
+.like-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.liked {
+  color: #dc3545; /* Filled heart color */
+}
+
+/*Collection Section */
+.collection-section {
+  max-width: 1060px; /* Match the padding of the content-wrapper */
+  margin: 0 auto;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #456;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.collection-section .popular-title {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #456;
+}
+
+.collection-section .more-link {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.d-flex {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.image-stack {
+  position: relative;
+  height: 200px; /* Adjust as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.stacked-image {
+  position: absolute;
+  width: 250px; /* Adjust width */
+  height: 100%; /* Full height */
+  object-fit: contain;
+  margin-left: -60px; /* Overlap effect */
+}
+
+.stacked-image:nth-child(1) { left: 0; }
+.stacked-image:nth-child(2) { left: 30px; }
+.stacked-image:nth-child(3) { left: 60px; }
+.stacked-image:nth-child(4) { left: 90px; }
+.stacked-image:nth-child(5) { left: 120px; }
+.stacked-image:nth-child(6) { left: 150px; }
+.stacked-image:nth-child(7) { left: 180px; }
+.stacked-image:nth-child(8) { left: 210px; }
