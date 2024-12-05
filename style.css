@@ -299,3 +299,58 @@ body {
 }
 
 /* Review Section */
+.review-section {
+  max-width: 1085px; /* Match the padding of the content-wrapper */
+  margin: 0 auto;
+}
+
+.review-section .row {
+  margin: 0; /* Remove default row margin */
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #456;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.review-section .popular-title {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #456;
+}
+
+.review-section .more-link {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
