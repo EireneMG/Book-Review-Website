@@ -312,7 +312,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Add this to your existing script.js
+// Theme Switcher
 document.addEventListener("DOMContentLoaded", function () {
   // Theme switcher functionality
   const themeButtons = document.querySelectorAll(".theme-btn");
@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Add this to your existing script.js
+// Navigation Bar
 document.addEventListener('DOMContentLoaded', function() {
     // Get current page URL
     const currentPage = window.location.pathname.split('/').pop();
