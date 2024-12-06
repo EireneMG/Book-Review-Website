@@ -444,11 +444,12 @@ body {
   margin: 0 auto;
 }
 
-.section-header {
+.books-section .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .popular-title {
@@ -605,6 +606,24 @@ body {
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
+}
+
+/* Customize scrollbar for dropdown menus */
+.dropdown-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #777;
 }
 
 /*Books Catalog*/
