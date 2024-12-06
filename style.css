@@ -1033,9 +1033,135 @@ body {
   font-size: 0.9rem;
 }
 
+/* Quotes Section */
+.quotes-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quote-card {
+  background: #FDF7F4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quote-content {
+  margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+  color: #AA7660;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.quote-source {
+  margin-top: 1rem;
+}
+
+.book-title {
+  color: #765040;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.book-author {
+  color: #99aabb;
+  font-size: 0.9rem;
+}
+
+.quote-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #D6C0B3;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  color: #765040;
+  font-size: 0.9rem;
+}
+
+.quote-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.like-btn, .share-btn {
+  background: none;
+  border: none;
+  color: #765040;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.like-btn:hover, .share-btn:hover {
+  color: #AA7660;
+}
+
+.like-btn span {
+  font-size: 0.9rem;
+}
+
+.quotes-section .more-link {
+  color: #765040;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.quotes-section .more-link:hover {
+  color: #D6C0B3;
+  text-decoration: none;
+}
+
 /* Footer Section*/
 .footer {
-  background-color: #f8f9fa;
+  background-color: #765040;
   padding: 3rem 0 1.5rem;
   margin-top: 4rem;
 }
@@ -1054,13 +1180,13 @@ body {
 }
 
 .footer-section h3 {
-  color: #333;
+  color: #D6C0B3;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 .footer-section p {
-  color: #666;
+  color: #FDF7F4;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -1071,7 +1197,7 @@ body {
 }
 
 .creator h4 {
-  color: #333;
+  color: #FDF7F4;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -1082,13 +1208,13 @@ body {
 }
 
 .social-links a {
-  color: #666;
+  color: #FDF7F4;
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #F25C05;
+  color: #AA7660;
 }
 
 .footer-bottom {
@@ -1098,7 +1224,7 @@ body {
 }
 
 .footer-bottom p {
-  color: #666;
+  color: #FDF7F4;
   font-size: 0.8rem;
   margin: 0;
 }

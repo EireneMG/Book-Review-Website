@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Website</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <i class="fas fa-book-open"></i>
+            The Last Page
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+              <div class="search-container">
+                <div class="search-wrapper">
+                  <i class="fas fa-search search-icon"></i>
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search..."
+                  />
+                  <div class="search-underline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="list-intro">
+        <h1 class="list-intro-title">
+          Words that resonate, stories that inspire. Share your favorite quotes.
+        </h1>
+        <button class="start-list-btn">Add a quote</button>
+      </div>
+
+      <section class="quotes-section">
+        <div class="section-header">
+          <h2 class="popular-title">POPULAR QUOTES</h2>
+          <a href="#" class="more-link">MORE</a>
+        </div>
+
+        <div class="quotes-grid">
+          <!-- Quote Card 1 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "Some books leave us free and some books make us free."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">- Ralph Waldo Emerson</p>
+                <p class="book-author">Reading Lolita in Tehran</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user1.jpg" alt="User" class="user-avatar" />
+                <span class="username">Sarah Parker</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,023</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card 2 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "That's the thing about books. They let you travel without
+                moving your feet."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">The Namesake</p>
+                <p class="book-author">Jhumpa Lahiri</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user2.jpg" alt="User" class="user-avatar" />
+                <span class="username">Emily Chen</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,234</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card 3 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "Some books leave us free and some books make us free."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">- Ralph Waldo Emerson</p>
+                <p class="book-author">Reading Lolita in Tehran</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user1.jpg" alt="User" class="user-avatar" />
+                <span class="username">Sarah Parker</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,234</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card 4 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "That's the thing about books. They let you travel without
+                moving your feet."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">The Namesake</p>
+                <p class="book-author">Jhumpa Lahiri</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user2.jpg" alt="User" class="user-avatar" />
+                <span class="username">Emily Chen</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,234</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card 5 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "That's the thing about books. They let you travel without
+                moving your feet."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">The Namesake</p>
+                <p class="book-author">Jhumpa Lahiri</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user2.jpg" alt="User" class="user-avatar" />
+                <span class="username">Emily Chen</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,234</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card 6 -->
+          <div class="quote-card">
+            <div class="quote-content">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <p class="quote-text">
+                "That's the thing about books. They let you travel without
+                moving your feet."
+              </p>
+              <div class="quote-source">
+                <p class="book-title">The Namesake</p>
+                <p class="book-author">Jhumpa Lahiri</p>
+              </div>
+            </div>
+            <div class="quote-footer">
+              <div class="user-info">
+                <img src="Assets/user2.jpg" alt="User" class="user-avatar" />
+                <span class="username">Emily Chen</span>
+              </div>
+              <div class="quote-actions">
+                <button class="like-btn">
+                  <i class="far fa-heart"></i>
+                  <span class="like-count">1,234</span>
+                </button>
+                <button class="share-btn">
+                  <i class="fas fa-share"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Add more quote cards as needed -->
+        </div>
+      </section>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              The Last Page is a platform for book lovers to discover, review,
+              and share their favorite reads.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Creators</h3>
+            <div class="creators">
+              <div class="creator">
+                <h4>Eirene Gratuito</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="creator">
+                <h4>Chloe Mejorada</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Last Page. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
