@@ -7,8 +7,8 @@ The Last Page is a dynamic web platform designed for book enthusiasts to discove
 - **User Profiles**: Personalized reading statistics and activity tracking
 - **Book Discovery**: Browse and search through an extensive collection of books
 - **Reviews**: Share thoughts and ratings on books
-- **Reading Progress**: Track currently reading and completed books
 - **Popular Collections**: Curated book collections for different moods and genres
+- **Quotes**: Share and discover inspiring quotes from your favorite books
 
 ## 🛠️ Technologies Used
 
