@@ -37,11 +37,11 @@ The Last Page is a dynamic web platform designed for book enthusiasts to discove
 
 ### Eirene Gratuito
 - Tasks: Home Page, Books Page, Reviews Page, Collection Page, Styles/Layout
-- GitHub: [@eirenegratuito](https://github.com/eirenegratuito)
+- GitHub: [@EireneMG](https://github.com/EireneMG)
 
 ### Claudine Moneek Mejorada
 - Tasks: Quotes Page, Account Page, Contents, Styles/Layout
-- GitHub: [@claudinemejorada](https://github.com/claudinemejorada)
+- GitHub: [@chloegndrl](https://github.com/chloegndrl)
 
 ## 📄 License
 
