@@ -50,3 +50,35 @@ document.querySelectorAll('.like-icon').forEach(icon => {
   
   // Initialize the view
   updateBooks();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.querySelector('.browse-btn');
+        
+        button.addEventListener('click', function(e) {
+            // Close all other dropdowns
+            dropdowns.forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('active');
+                    d.querySelector('.browse-btn').classList.remove('active');
+                }
+            });
+            
+            // Toggle current dropdown
+            dropdown.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                dropdown.querySelector('.browse-btn').classList.remove('active');
+            });
+        }
+    });
+});

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Website</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <i class="fas fa-book-open"></i>
+            The Last Page
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Account</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+              <div class="search-container">
+                <div class="search-wrapper">
+                  <i class="fas fa-search search-icon"></i>
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search..."
+                  />
+                  <div class="search-underline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="list-intro">
+        <h1 class="list-intro-title">
+          Where books end, reviews begin. Share the legacy of your reads.
+        </h1>
+        <button class="start-list-btn">Write a review</button>
+      </div>
+
+      <section class="review-section">
+        <div class="section-header">
+          <h2 class="popular-title">POPULAR REVIEWS</h2>
+          <a href="#" class="more-link">MORE</a>
+        </div>
+        <div class="row">
+          <!-- Review Card 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book1.jpg"
+                    class="img-fluid rounded-start"
+                    alt="The Seven Husbands of Evelyn Hugo"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      The Seven Husbands of Evelyn Hugo
+                    </h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "A mesmerizing journey through old Hollywood glamour and
+                      the price of fame. Taylor Jenkins Reid's storytelling is
+                      absolutely captivating."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">24,893 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book2.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Tomorrow, and Tomorrow, and Tomorrow"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tomorrow, and Tomorrow, and Tomorrow
+                    </h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "A beautiful exploration of friendship, creativity, and
+                      the gaming world. Gabrielle Zevin's writing is both
+                      heartbreaking and hopeful."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">19,457 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book3.jpg"
+                    class="img-fluid rounded-start"
+                    alt="A Court of Thorns and Roses"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">A Court of Thorns and Roses</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "Sarah J. Maas creates a stunning fantasy world with
+                      complex characters and intricate plot twists. A
+                      masterpiece of world-building."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">16,782 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Card 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book4.jpg"
+                    class="img-fluid rounded-start"
+                    alt="The Midnight Library"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Midnight Library</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "Matt Haig's exploration of life's infinite possibilities
+                      is both thought-provoking and deeply moving. A must-read
+                      for everyone."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">15,934 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Review Card 5 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book4.jpg"
+                    class="img-fluid rounded-start"
+                    alt="The Midnight Library"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Midnight Library</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "Matt Haig's exploration of life's infinite possibilities
+                      is both thought-provoking and deeply moving. A must-read
+                      for everyone."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">15,934 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Review Card 6 -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="Assets/book4.jpg"
+                    class="img-fluid rounded-start"
+                    alt="The Midnight Library"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Midnight Library</h5>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      "Matt Haig's exploration of life's infinite possibilities
+                      is both thought-provoking and deeply moving. A must-read
+                      for everyone."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="far fa-heart me-2 text-danger like-icon"></i>
+                      <span class="like-count">15,934 likes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              The Last Page is a platform for book lovers to discover, review,
+              and share their favorite reads.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Creators</h3>
+            <div class="creators">
+              <div class="creator">
+                <h4>Eirene Gratuito</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="creator">
+                <h4>Chloe Mejorada</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Last Page. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
