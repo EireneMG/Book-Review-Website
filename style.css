@@ -108,7 +108,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Adjust height as needed */
+  height: 90vh; /* Adjust height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +118,7 @@ body {
   background-color: rgba(255, 255, 255, 0.7); /* White background with transparency */
   padding: 20px 40px;
   border: 1px solid #ccc;
+  border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
