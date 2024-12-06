@@ -33,7 +33,7 @@ body {
 .nav-link {
   color: #000 !important;
   margin: 0 0.8rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -61,7 +61,7 @@ body {
   left: 0;
   padding-left: 8px;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 .search-input {
@@ -546,7 +546,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .browse-label {
@@ -627,17 +627,27 @@ body {
 }
 
 /*Books Catalog*/
+.books-catalog .books-section {
+    max-width: 1050px;  /* Match the width of your books container */
+    margin: 0 auto;
+    padding: 0;
+}
+
 .books-catalog {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Specific gap to ensure perfect alignment */
-  margin-top: 2rem;
+  justify-content: flex-start; /* Align items to start */
+  gap: 15px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  width: 100%; 
 }
 
 .books-catalog .book {
-  width: 196px; /* (1050px - (4 * 16px)) / 5 books per row */
-  height: 280px; /* Adjusted height to maintain proportion */
-  margin: 0; /* Remove any margins */
+  width: 198px; 
+  height: 280px; 
+  margin: 0; 
 }
 
 .books-catalog .book img {
@@ -645,4 +655,287 @@ body {
   height: 100%;
   object-fit: fill;
   border-radius: 4px;
+}
+
+.catalog-navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.catalog-next-btn {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.catalog-next-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.catalog-next-btn i {
+  font-size: 0.7rem;
+}
+
+/* Collection.html*/
+.list-intro {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: -5rem;
+}
+
+.list-intro-title {
+  color: #99AABB;
+  font-size: 1.8rem;
+  font-weight: normal;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.start-list-btn {
+  background: #2c3440;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-list-btn:hover {
+  background: #456;
+}
+.collections-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.collections-container .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.section-title {
+  color: black;
+  font-size: 0.8rem;
+}
+
+.sort-options {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.collection-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #2c3440; /* Changed to solid color */
+  margin-bottom: 1px; /* Added to ensure border visibility */
+}
+
+.collection-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.poster-stack {
+  position: relative;
+  width: 400px;
+  height: 150px;
+}
+
+.poster-stack img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+/* Position each image with overlap */
+.poster-stack img:nth-child(1) { left: 0; z-index: 8; }
+.poster-stack img:nth-child(2) { left: 40px; z-index: 7; }
+.poster-stack img:nth-child(3) { left: 80px; z-index: 6; }
+.poster-stack img:nth-child(4) { left: 120px; z-index: 5; }
+.poster-stack img:nth-child(5) { left: 160px; z-index: 4; }
+.poster-stack img:nth-child(6) { left: 200px; z-index: 3; }
+.poster-stack img:nth-child(7) { left: 240px; z-index: 2; }
+.poster-stack img:nth-child(8) { left: 280px; z-index: 1; }
+
+.collection-info {
+  flex: 1;
+}
+
+.collection-info h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.list-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.list-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.sort-options {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.time-dropdown-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.time-dropdown-btn i {
+  font-size: 0.8rem;
+}
+
+.time-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #2c3440;
+  border: 1px solid #456;
+  border-radius: 3px;
+  min-width: 120px;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown:hover .time-dropdown-menu {
+  display: block;
+}
+
+.time-dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.time-dropdown-item:hover {
+  background: #456;
+}
+
+/* Footer Section*/
+.footer {
+  background-color: #f8f9fa;
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 400px;
+}
+
+.footer-section h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.creators {
+  display: flex;
+  gap: 2rem;
+}
+
+.creator h4 {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #666;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #F25C05;
+}
+
+.footer-bottom {
+  margin: 2rem auto 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 0.8rem;
+  margin: 0;
 }
