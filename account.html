@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Website</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-book-open"></i>
+            The Last Page
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collection.html">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quotes.html">Quotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account.html">Account</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+              <div class="search-container">
+                <div class="search-wrapper">
+                  <i class="fas fa-search search-icon"></i>
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search..."
+                  />
+                  <div class="search-underline"></div>
+                </div>
+                <!-- Add theme switcher here -->
+                <div class="theme-switcher">
+                  <div class="theme-options">
+                    <button
+                      class="theme-btn light-theme active"
+                      data-theme="light"
+                    >
+                      <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="theme-btn dark-theme" data-theme="dark">
+                      <i class="fas fa-moon"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="account-container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <img
+                src="Assets/user1.jpg"
+                alt="Profile Picture"
+                class="avatar-img"
+              />
+              <button class="edit-avatar-btn">
+                <i class="fas fa-camera"></i>
+              </button>
+            </div>
+            <div class="profile-info">
+              <h1 class="profile-name">Eirene Gratuito</h1>
+              <p class="profile-bio">"Reading is dreaming with open eyes"</p>
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <span class="stat-number">127</span>
+                  <span class="stat-label">Books Read</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">45</span>
+                  <span class="stat-label">Reviews</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">892</span>
+                  <span class="stat-label">Followers</span>
+                </div>
+              </div>
+            </div>
+            <button class="edit-profile-btn">Edit Profile</button>
+          </div>
+        </div>
+
+        <!-- Reading Activity -->
+        <div class="activity-section">
+          <div class="section-header">
+            <h2>Reading Activity</h2>
+            <div class="reading-progress">
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+              <span class="progress-text">15/20 books read this year</span>
+            </div>
+          </div>
+
+          <!-- Currently Reading -->
+          <div class="currently-reading">
+            <h3>Currently Reading</h3>
+            <div class="book-cards">
+              <div class="book-card">
+                <img
+                  src="Assets/currentreading.jpg"
+                  alt="Book Cover"
+                  class="book-cover"
+                />
+                <div class="book-info">
+                  <h4>The Love Hypothesis</h4>
+                  <p class="author">Ali Hazelwood</p>
+                  <div class="reading-status">
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 60%"></div>
+                    </div>
+                    <span>60% completed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="recent-activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-list">
+              <div class="activity-item">
+                <i class="fas fa-book activity-icon"></i>
+                <div class="activity-content">
+                  <p>
+                    Finished reading
+                    <span class="highlight">The Song of Achilles</span>
+                  </p>
+                  <span class="activity-time">2 days ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <i class="fas fa-star activity-icon"></i>
+                <div class="activity-content">
+                  <p>
+                    Reviewed
+                    <span class="highlight"
+                      >The Seven Husbands of Evelyn Hugo</span
+                    >
+                  </p>
+                  <span class="activity-time">5 days ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <i class="fas fa-quote-right activity-icon"></i>
+                <div class="activity-content">
+                  <p>
+                    Added a new quote from
+                    <span class="highlight"
+                      >A Court of Thorns and Roses</span
+                    >
+                  </p>
+                  <span class="activity-time">1 week ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              The Last Page is a platform for book lovers to discover, review,
+              and share their favorite reads.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Creators</h3>
+            <div class="creators">
+              <div class="creator">
+                <h4>Eirene Gratuito</h4>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/Eirene.Mndz/" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/akosieirene/" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://github.com/EireneMG" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+              <div class="creator">
+                <h4>Chloe Mejorada</h4>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/chloegndrl" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/chloegndrl/" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://github.com/chloegndrl" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 The Last Page. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

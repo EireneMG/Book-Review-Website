@@ -13,6 +13,7 @@ body {
   gap: 0.8rem;
   color: #AA7660 !important;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navbar-brand i {
@@ -21,7 +22,7 @@ body {
 }
 
 .nav-link {
-  color: black !important;
+  color: var(--text-primary) !important;
   margin: 0 0.8rem;
   font-size: 1.1rem;
   position: relative;
@@ -29,7 +30,29 @@ body {
 }
 
 .nav-link:hover {
-  color: #AA7660 !important;
+  color: var(--accent-primary) !important;
+}
+
+.nav-link.active {
+  color: var(--accent-primary) !important;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
 
 /* Search container styles */
@@ -1159,6 +1182,222 @@ body {
   text-decoration: none;
 }
 
+/* Account Page Styles */
+.account-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Profile Section */
+.profile-section {
+  background: #FDF7F4;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-avatar {
+  position: relative;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.edit-avatar-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #765040;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-avatar-btn:hover {
+  background: #AA7660;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-name {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-bio {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  color: #765040;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.edit-profile-btn {
+  background: #765040;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background: #AA7660;
+}
+
+/* Activity Section */
+.activity-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.reading-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 8px;
+  background: #D6C0B3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #765040;
+  border-radius: 4px;
+}
+
+.progress-text {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Currently Reading */
+.currently-reading {
+  margin-bottom: 2rem;
+}
+
+.book-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.book-card {
+  display: flex;
+  gap: 1rem;
+  background: #FDF7F4;
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.book-cover {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-info h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Recent Activity */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #FDF7F4;
+  border-radius: 8px;
+}
+
+.activity-icon {
+  color: #765040;
+  font-size: 1.2rem;
+}
+
+.activity-content p {
+  margin: 0;
+  color: #333;
+}
+
+.highlight {
+  color: #765040;
+  font-weight: 500;
+}
+
+.activity-time {
+  color: #666;
+  font-size: 0.8rem;
+}
+
 /* Footer Section*/
 .footer {
   background-color: #765040;
@@ -1227,4 +1466,142 @@ body {
   color: #FDF7F4;
   font-size: 0.8rem;
   margin: 0;
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  margin-left: 4rem;
+  margin-top: -5px;
+}
+
+.theme-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--accent-light);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--accent-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-btn i {
+  font-size: 1rem;
+}
+
+.theme-btn:hover {
+  background: var(--accent-light);
+}
+
+.theme-btn.active {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--accent-primary);
+}
+
+/* Light Theme (Default) */
+:root {
+  --bg-primary: #FDF7F4;
+  --bg-secondary: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --accent-primary: #765040;
+  --accent-secondary: #AA7660;
+  --accent-light: #D6C0B3;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-primary: #2C2C2C;
+  --bg-secondary: #1F1F1F;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --accent-primary: #AA7660;
+  --accent-secondary: #D6C0B3;
+  --accent-light: #765040;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Update existing color values with CSS variables */
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.navbar {
+  background-color: var(--bg-primary) !important;
+}
+
+.profile-section {
+  background: var(--bg-primary);
+}
+
+.profile-name {
+  color: var(--text-primary);
+}
+
+.profile-bio {
+  color: var(--text-secondary);
+}
+
+.stat-number {
+  color: var(--accent-primary);
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.activity-section {
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.progress-bar {
+  background: var(--accent-light);
+}
+
+.progress {
+  background: var(--accent-primary);
+}
+
+.book-card {
+  background: var(--bg-primary);
+}
+
+.book-info h4 {
+  color: var(--text-primary);
+}
+
+.author {
+  color: var(--text-secondary);
+}
+
+.activity-item {
+  background: var(--bg-primary);
+}
+
+.activity-icon {
+  color: var(--accent-primary);
+}
+
+.activity-content p {
+  color: var(--text-primary);
+}
+
+.highlight {
+  color: var(--accent-primary);
+}
+
+.activity-time {
+  color: var(--text-secondary);
 }
