@@ -357,7 +357,9 @@ body {
 }
 
 .review-section .card {
-  height: 260px;
+  height: auto; /* Allow the card height to adjust based on content */
+  max-height: none; /* Remove any max-height restriction */
+  overflow: visible; /* Allow overflow */
   border: none;
   background-color: #FDF7F4;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -986,7 +988,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 1.5rem;
-  height: 260px;
+  height: 300px;
 }
 
 .card:hover {
