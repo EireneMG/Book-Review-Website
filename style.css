@@ -145,6 +145,12 @@ body {
   width: 100%;
 }
 
+.img-fluid {
+  max-height: 300px; /* Set the maximum height */
+  width: 100%; /* Ensure it takes full width */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
 /* Poster Section */
 .poster-main-title {
   text-align: center;
@@ -322,7 +328,7 @@ body {
 /* Review Section */
 .review-section {
   max-width: 1060px;  /* Match with other sections */
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 0;  /* Remove padding */
 }
 
@@ -357,9 +363,8 @@ body {
 }
 
 .review-section .card {
-  height: auto; /* Allow the card height to adjust based on content */
-  max-height: none; /* Remove any max-height restriction */
-  overflow: visible; /* Allow overflow */
+  height: 300px;
+  overflow: hidden;
   border: none;
   background-color: #FDF7F4;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -399,7 +404,7 @@ body {
 /*Collection Section */
 .collection-section {
   max-width: 1060px; /* Match the padding of the content-wrapper */
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .section-header {
   display: flex;
@@ -739,7 +744,7 @@ body {
 .list-intro {
   text-align: center;
   padding: 4rem 2rem;
-  margin-bottom: -5rem;
+  margin-bottom: 2rem;
 }
 
 .list-intro-title {
@@ -776,6 +781,7 @@ body {
   align-items: center;
   margin-bottom: 1rem;
   width: 100%;
+  margin-top: -2rem;
 }
 
 .section-title {
@@ -949,7 +955,7 @@ body {
 /* Reviews Section */
 .reviews-section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 0 2rem;
 }
 
@@ -983,12 +989,12 @@ body {
 }
 
 /* Review Cards */
-.card {
-  border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 1.5rem;
+.reviews-section .card {
   height: 300px;
+  overflow: visible;
+  border: none;
+  background-color: #FDF7F4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -1043,7 +1049,7 @@ body {
 
 /* Book Cover Image */
 .img-fluid {
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   border-radius: 4px 0 0 4px;
 }
