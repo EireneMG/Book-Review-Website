@@ -31,8 +31,8 @@ The Last Page is a dynamic web platform designed for book enthusiasts to discove
 
 1. Clone the repository
 2. Open `index.html` in your browser
-3. Start exploring the world of books
-4. Visit our netlify website!
+3. You can also visit the live demo [thelastpage](https://thelastpage.netlify.app/)
+4. Start exploring the world of books
 
 ## 👥 Team Members
 
