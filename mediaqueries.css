@@ -37,33 +37,42 @@
     }
 
     /* Popular Reviews Section */
-    .popular-reviews {
-        padding: 2rem 0;
+    .review-section {
+        max-width: 100%; /* Allow full width */
+        margin: 1rem auto; /* Center align */
+        padding: 0 1rem; /* Add some padding */
     }
 
-    .book-cards-container {
-        position: relative;
-        width: 100%;
-        padding: 0 2rem;
+    .review-section .card {
+        height: auto; /* Allow height to adjust based on content */
+        max-width: 90%; /* Make cards smaller */
+        margin: 0 auto 1rem; /* Center align and add margin */
+        border: none;
+        background-color: #FDF7F4;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .book-cards {
-        display: flex;
-        gap: 2rem;
-        overflow-x: hidden;
+    .review-section .card-body {
+        padding: 1rem; /* Maintain padding */
     }
 
-    .book-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-        border-radius: 12px;
-        overflow: hidden;
+    .review-section .card-title {
+        font-size: 1rem; /* Adjust title size */
+        margin-bottom: 0.5rem;
     }
 
-    .book-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .review-section .card-text {
+        font-size: 0.85rem; /* Adjust text size */
+        color: #333;
+    }
+
+    .review-section .user-profile {
+        flex-direction: column; /* Stack user profile elements */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .review-section .like-count {
+        font-size: 0.8rem; /* Adjust like count size */
     }
 
     /* Popular Collection */
@@ -190,40 +199,17 @@
         width: 100%;
     }
 
-    /* Popular Reviews Section */
-    .book-cards {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 1rem;
+    .review-section .card {
+        max-width: 100%; /* Full width on small devices */
+        margin: 0 auto 1rem; /* Center align */
     }
 
-    .book-card {
-        scroll-snap-align: start;
+    .review-section .card-title {
+        font-size: 0.9rem; /* Further adjust title size */
     }
 
-    .carousel-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .carousel-arrow.left {
-        left: 0;
-    }
-
-    .carousel-arrow.right {
-        right: 0;
+    .review-section .card-text {
+        font-size: 0.8rem; /* Further adjust text size */
     }
 
     /* Profile Section */
