@@ -50,7 +50,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/the-last-page/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/EireneMG/the-last-page/issues).
 
 ## 📬 Contact
 
